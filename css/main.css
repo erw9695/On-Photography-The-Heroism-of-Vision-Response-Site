@@ -1,19 +1,14 @@
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
     background-color:black;
 }
 
 
 
 main {
-    background-color:dimgrey;
-    height: 60vh;
-    width: 60vw;
-    margin: 10vw auto;
-    box-shadow: 0 0 50px 70px dimgrey;
+    background-color:black;
+    height: 
+    overflow:visible;
 }
 
 div {
