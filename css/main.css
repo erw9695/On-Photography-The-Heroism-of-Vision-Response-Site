@@ -1,0 +1,41 @@
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    background-color:black;
+}
+
+
+
+main {
+    background-color:dimgrey;
+    height: 60vh;
+    width: 60vw;
+    margin: 10vw auto;
+    box-shadow: 0 0 50px 70px dimgrey;
+}
+
+div {
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+}
+p {
+    color:white;
+    font-size: 4vw;
+    text-align:center;
+}
+
+#shape {
+    position:absolute;
+    top: -50px;
+    right: 120px;
+    height:100px;
+    width:200px;
+    background:ghostwhite;
+    border-radius:100px/50px;
+    display:inline;
+}
