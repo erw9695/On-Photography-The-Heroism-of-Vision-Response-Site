@@ -1,0 +1,16 @@
+.styleGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.styleFrame {
+    margin: 30px;
+    background-color: brown;
+}
+
+.styleImg {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 500px;
+}
