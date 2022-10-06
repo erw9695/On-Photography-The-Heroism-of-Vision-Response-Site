@@ -1,16 +1,71 @@
+body {
+    background-color: #759FBC;
+}
+
 .styleGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .styleFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
     margin: 30px;
-    background-color: brown;
+    height: 250px;
+    width: 320px;
+    vertical-align: bottom;
+    background-color: white;
+}
+
+.styleFrame:hover {
+    height: 300px;
+    width: 380px;
 }
 
 .styleImg {
     height: auto;
     width: auto;
-    max-height: 300px;
-    max-width: 500px;
+    min-width: 320px;
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.styleCaption {
+    font-size: auto;
+    font-family: "papyrus";
+}
+
+#imageOne {
+    display: block;
+}
+
+#imageTwo {
+    display: block;
+}
+
+#imageThree {
+    display: block;
+}
+
+#imageFour {
+    display: block;
+}
+
+#imageFive {
+    display: block;
+}
+
+#imageSix {
+    display: block;
+}
+
+#imageSeven {
+    display: block;
+}
+
+#imageEight {
+    display: block;
 }
