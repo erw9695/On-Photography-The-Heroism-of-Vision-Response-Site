@@ -12,7 +12,10 @@
 <main id="backImg">
     <div>
         <button id="camera_but" onclick="cameraClick()"> Take Picture! </button>
-
+<!--        <button id="album" onclick=""-->
+        <form action="https://google.com">
+            <input type="submit" value="Go to Google" />
+        </form>
     </div>
 
 
@@ -22,9 +25,42 @@
 </body>
 
 <script>
-function cameraClick() {
-    // console.log("hi");
-    document.getElementById("backImg").style.opacity -= .1;
+    var opacity = 1.0;
+    var arr = ['img/image.jpg', 'img/image2Lazlo.jpg', 'img/image3.jpg', 'img/image4JacquesHenri.jpg',
+                "img/image5JacobRiis.jpg", "img/image6JosephCornell.jpg", "img/Image7MyanmarCoup.jpeg",
+                "img/image8pollution.jpg"];
+    var imgNum = 0;
+async function cameraClick() {
+    let time = .05;
+
+    //https://stackoverflow.com/questions/9419263/how-to-play-audio
+    // Shutter sound
+    var audio = new Audio('/audio/camera-shutter.mp3');
+    audio.play();
+
+    // Fade out
+    for (let i = 0; i < 10; i++) {
+        opacity -= .1;
+        await sleep(time * 1000);
+        document.getElementById("backImg").style.opacity = opacity;
+    }
+
+    // Select image
+    imgNum = (imgNum + 1) % 8;
+    let url = "url(" + arr[imgNum] +")";
+    document.getElementById("backImg").style.backgroundImage = url;
+
+    // Fade in
+    for (let i = 0; i < 10; i++) {
+        opacity += .1;
+        await sleep(time * 1000);
+        document.getElementById("backImg").style.opacity = opacity;
+    }
+
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 </script>
 
