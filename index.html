@@ -9,9 +9,9 @@
 </head>
 
 <body>
-<main>
+<main id="backImg">
     <div>
-        <p> hi</p>
+        <button id="camera_but" onclick="cameraClick()"> Take Picture! </button>
 
     </div>
 
@@ -20,6 +20,14 @@
 
 
 </body>
+
+<script>
+function cameraClick() {
+    // console.log("hi");
+    document.getElementById("backImg").style.opacity -= .1;
+}
+</script>
+
 
 </html>
 
