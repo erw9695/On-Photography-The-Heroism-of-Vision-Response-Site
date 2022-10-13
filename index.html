@@ -13,8 +13,8 @@
     <div>
         <button id="camera_but" onclick="cameraClick()"> Take Picture! </button>
 <!--        <button id="album" onclick=""-->
-        <form action="https://google.com">
-            <input type="submit" value="Go to Google" />
+        <form id="album" action="./index2.html" method="GET">
+            <input id="album_but" type="submit" name="num" value="-1" />
         </form>
     </div>
 
@@ -38,6 +38,8 @@ async function cameraClick() {
     var audio = new Audio('/audio/camera-shutter.mp3');
     audio.play();
 
+    changeLink();
+
     // Fade out
     for (let i = 0; i < 10; i++) {
         opacity -= .1;
@@ -57,6 +59,10 @@ async function cameraClick() {
         document.getElementById("backImg").style.opacity = opacity;
     }
 
+}
+
+function changeLink() {
+    document.getElementById("album_but").value = imgNum;
 }
 
 function sleep(ms) {

@@ -18,6 +18,8 @@ body {
     width: 320px;
     vertical-align: bottom;
     background-color: white;
+    filter: contrast(1000%);
+
 }
 
 .styleFrame:hover {
@@ -33,39 +35,64 @@ body {
     max-width: 100%;
 }
 
+.pic {
+    position: absolute;
+    top: 0px;
+    opacity:0;
+    height: 100%;
+    width: 100%;
+}
+
 .styleCaption {
     font-size: auto;
     font-family: "papyrus";
 }
 
-#imageOne {
+[id="0"] {
     display: block;
+    visibility: hidden;
+    filter: contrast(200%);
+
 }
 
-#imageTwo {
+[id="1"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageThree {
+[id="2"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageFour {
+[id="3"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageFive {
+[id="4"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageSix {
+[id="5"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageSeven {
+[id="6"] {
     display: block;
+    visibility: hidden;
+
 }
 
-#imageEight {
+[id="7"] {
     display: block;
+    visibility: hidden;
+
 }
